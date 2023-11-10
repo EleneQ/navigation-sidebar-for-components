@@ -5,7 +5,7 @@ function ButtonPage() {
   return (
     <div>
       <div>
-        <Button primary outline className="my-5">
+        <Button primary outline>
           <GoBell />
           Click Me
         </Button>
