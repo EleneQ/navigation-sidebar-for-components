@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/navigation-sidebar-for-components/static/css/main.3078469c.css",
+    "main.js": "/navigation-sidebar-for-components/static/js/main.6468c773.js",
+    "index.html": "/navigation-sidebar-for-components/index.html",
+    "main.3078469c.css.map": "/navigation-sidebar-for-components/static/css/main.3078469c.css.map",
+    "main.6468c773.js.map": "/navigation-sidebar-for-components/static/js/main.6468c773.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3078469c.css",
+    "static/js/main.6468c773.js"
+  ]
+}
