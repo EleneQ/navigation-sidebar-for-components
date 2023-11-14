@@ -48,7 +48,8 @@ function Button({
   );
 
   /* 
-    spreading the rest variable
+    spreading the rest variable. in the rest array, we
+    can have onClick passed in, etc.
   */
   return (
     <button {...rest} className={classes}>
@@ -67,7 +68,7 @@ Button.propTypes = {
   Number(false) = 0, Number(true) = 1,
   Number(undefined) = NaN. if one of the props isn't passed
   in from the <Button /> component when the component's being
-  used, it's gonna have the value of undefined and since we can't
+  used, it's gonna have the value of undefined and, since we can't
   use NaN for calculating the count's value, we're
   doing !!undefined, which returns false and Number(false) = 0,
   which we can use

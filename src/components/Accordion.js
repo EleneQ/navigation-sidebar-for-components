@@ -10,7 +10,7 @@ function Accordion({ items }) {
   const [expandedIndex, setExpandedIndex] = useState(0);
 
   /* 
-      the else if statement is so that the currently selected
+      the else if statement is so that the currently expanded
       accordion section will collapse if we click it again
     */
   const handleClick = (nextIndex) => {

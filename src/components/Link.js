@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import useNavigation from "../hooks/use-navigation";
-
+//3
 /* 
   the goal of this component is to override normal
-  navigation and be used instead of hte default <a>
+  navigation and be used instead of the default <a>
   tags
 */
 function Link({ to, children, className, activeClassName }) {
@@ -19,6 +19,10 @@ function Link({ to, children, className, activeClassName }) {
     if (event.metaKey || event.ctrlKey) {
       return;
     }
+    /* 
+      this is what stops the total page refresh so that
+      we can use programatic navigation
+    */
     event.preventDefault();
     navigate(to);
   };

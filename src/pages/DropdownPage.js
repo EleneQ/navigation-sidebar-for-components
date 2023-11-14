@@ -11,8 +11,8 @@ function DropdownPage() {
     the user can select how many of a clothing piece they want 
     and we want to display the total price of whatever they selected
     at the bottom of the page, then that price component would need
-    to also know about what option was selected, so it's need to know
-    about the selection piece of data.
+    to also know about what option was selected, so it needs to know
+    about the selection piece of data/state
   */
   const [selection, setSelection] = useState(null);
 

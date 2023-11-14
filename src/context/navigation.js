@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react";
-
+//2
 const NavigationContext = createContext();
 
 function NavigationProvider({ children }) {
@@ -9,7 +9,7 @@ function NavigationProvider({ children }) {
     components/content
 
     the initial window.location.pathname is there so that we know
-    what the initial path was
+    what the initial path in the address bar was
   */
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
 
@@ -17,7 +17,11 @@ function NavigationProvider({ children }) {
     here we're handling the user clicking the back and forward
     buttons on the site, which is when the popstate event will 
     be triggered. But this event will be triggered only if the 
-    current url was added though the pushState() function
+    current url was added though the pushState() function.
+
+    when the user clicks the back and forward buttons, the whole
+    application will be re-rendered. this is needed so that we can
+    display the correct content on the screen.
   */
   useEffect(() => {
     const handler = () => {
