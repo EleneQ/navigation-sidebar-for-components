@@ -1,5 +1,10 @@
 import Link from "./Link";
 //1
+/* 
+  the Sidebar component is created to display a list
+  of link object that have a label and an associated 
+  path
+*/
 function Sidebar() {
   const links = [
     { label: "Dropdown", path: "/" },
